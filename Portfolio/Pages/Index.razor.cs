@@ -8,7 +8,6 @@
 
         protected override Task OnInitializedAsync()
         {
-
             Colors = GetRandomNumberOfRandomColors().ToArray();
             return base.OnInitializedAsync();
         }
