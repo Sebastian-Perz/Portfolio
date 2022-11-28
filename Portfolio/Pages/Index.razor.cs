@@ -11,11 +11,14 @@
             Colors = GetRandomNumberOfRandomColors().ToArray();
             return base.OnInitializedAsync();
         }
-
+        private void Refresh()
+        {
+            Colors = GetRandomNumberOfRandomColors().ToArray();
+        }
         private IEnumerable<string> GetRandomNumberOfRandomColors()
         {
             Random random = new Random();
-            return Enumerable.Range(1, random.Next(0, 30)).Select(x => GenerateColor());
+            return Enumerable.Range(1, random.Next(1, 30)).Select(x => GenerateColor());
             //return Enumerable.Range(1, 7).Select(x => GenerateColor());
         }
         private string GenerateColor()
