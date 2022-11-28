@@ -5,6 +5,7 @@
 
         string[] Colors { get; set; } = new[] { "#4D562C", "#91262C", "#912284", };
 
+
         protected override Task OnInitializedAsync()
         {
             Colors = GetRandomNumberOfRandomColors().ToArray();
