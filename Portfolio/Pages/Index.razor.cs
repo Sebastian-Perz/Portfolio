@@ -20,12 +20,10 @@
         }
         private string GenerateColor()
         {
-
             var random = new Random();
             var a = new[] { new byte(), new byte(), new byte() };
             random.NextBytes(a);
             return "#" + Convert.ToHexString(a);
-
         }
         private int GetRandom(int min, int max, int offset = default)
         {
