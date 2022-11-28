@@ -5,6 +5,13 @@
 <h1>Hello, world!</h1>
 
 Welcome to my simple portfolio page.
-Do you
- like it?
-<SurveyPrompt Title="How is Blazor working for you?" />
+<b>Do you like it?</b>
+<div class="d-flex flex-wrap gap-3">
+@foreach (var item in Colors)
+{
+        <div class="d-flex px-6 py-2" style="width:@(GetRandom(10,30))px; height:@(GetRandom(70,150))px; background-color:@(item);">
+    </div>
+}
+</div>
+
+
