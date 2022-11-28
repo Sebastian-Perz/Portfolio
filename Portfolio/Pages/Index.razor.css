@@ -1,1 +1,6 @@
-﻿
+﻿.my-box{
+
+}
+.my-box:hover {
+    opacity:.6;
+}

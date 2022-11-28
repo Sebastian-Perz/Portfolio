@@ -16,8 +16,8 @@
         private IEnumerable<string> GetRandomNumberOfRandomColors()
         {
             Random random = new Random();
-            //return Enumerable.Range(1, random.Next(0, 11)).Select(x => GenerateColor());
-            return Enumerable.Range(1, 7).Select(x => GenerateColor());
+            return Enumerable.Range(1, random.Next(0, 30)).Select(x => GenerateColor());
+            //return Enumerable.Range(1, 7).Select(x => GenerateColor());
         }
         private string GenerateColor()
         {
