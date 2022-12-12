@@ -12,8 +12,4 @@
     <PackageReference Include="MudBlazor" Version="6.1.5" />
   </ItemGroup>
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="PowerShell -ExecutionPolicy Bypass -Command &quot;&amp; '$(ProjectDir)PreBuildScripts\ReadAllFilesFromImages.ps1'" />
-  </Target>
-
 </Project>
