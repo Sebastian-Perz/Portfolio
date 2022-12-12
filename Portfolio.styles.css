@@ -5,6 +5,25 @@
 .my-box:hover[b-1jma93o9eg] {
     opacity:.6;
 }
+
+
+.gallery-grid-3[b-1jma93o9eg] {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gallery-grid-2[b-1jma93o9eg] {
+    grid-template-columns: 1fr 1fr;
+}
+.gallery-column[b-1jma93o9eg] {
+    display:flex;
+    flex-direction: column;
+    
+    justify-content: stretch;
+}
+
+.gallery-image[b-1jma93o9eg]{
+    width: 100%;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-p531rfodtv] {
     position: relative;
