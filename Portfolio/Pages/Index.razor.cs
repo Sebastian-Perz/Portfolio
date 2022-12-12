@@ -2,10 +2,23 @@
 {
     public partial class Index
     {
+        private int spacingColumns  = 2;
+        private int gapItems  = 2;
+
 
         string[] Colors { get; set; } = new[] { "#4D562C", "#91262C", "#912284", };
 
 
+        public List<string> Files { get; set; } = new List<string>(Enumerable.Range(1, 40).Select(x=>x.ToString("00"))); 
+
+
+        public IEnumerable<string> GetEveryNthItem(int nth, int offset = default)
+        {
+          return  Files
+                .Select((x, i) => new { File = x, Index = i })
+                .Where(x => (x.Index-offset  )% nth == 0)
+                .Select(x => x.File);
+        }
         protected override Task OnInitializedAsync()
         {
             Colors = GetRandomNumberOfRandomColors().ToArray();
