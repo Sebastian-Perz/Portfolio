@@ -4,3 +4,22 @@
 .my-box:hover {
     opacity:.6;
 }
+
+
+.gallery-grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gallery-grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+.gallery-column {
+    display:flex;
+    flex-direction: column;
+    
+    justify-content: stretch;
+}
+
+.gallery-image{
+    width: 100%;
+}
