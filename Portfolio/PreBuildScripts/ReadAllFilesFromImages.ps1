@@ -1,0 +1,1 @@
+"This will be wile" | Out-File -FilePath C:\Nordan\first-file.txt
