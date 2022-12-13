@@ -23,6 +23,13 @@
 
 .gallery-image[b-1jma93o9eg]{
     width: 100%;
+    transition: all ease-in-out 0.7s;
+}
+.gallery-image:hover[b-1jma93o9eg]{
+    transform: scale(0.8);
+    opacity: 0.7;
+    border: 10px solid white;
+    border-radius:50px;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-p531rfodtv] {
